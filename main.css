@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* 共通部分 */
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Yuji Syuku', serif;
+    color: #fff;
+    text-align: justify;
+    line-height: 1.8;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+iframe{
+    width: 100%;
+}
+/* 個別部分 */
+
+/* wallpaper */
+#wallpaper{
+    background-image: url(./img/wood-texture_00008.jpg);
+    min-height: 100vh;
+}
+.wallpaper{
+    background-size: cover;
+    background-position: center top;
+}
+#wallpaper2{
+    background-image: url(./img/wood-texture_00008.jpg);
+    min-height: 300vh;
+}
+#wallpaper3{
+    background-image: url(./img/wood-texture_00008.jpg);
+    min-height: 230vh;
+}
+
+/* Top */
+
+/* Top-header */
+.Top-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.Top-link{
+    font-size: 35px;
+    font-weight: 500;
+}
+.main-navigation{
+    margin: 0;
+    padding: 0 0 015px;
+}
+.main-contents{
+    display: inline-block;
+    position: relative;
+}
+.main-contentsLink{
+    display: block;
+    text-align: center;
+    margin:  0 50px;
+    font-size: 20px;
+}
+.main-contentsLink:hover{
+    color: #339900;
+}
+.sub-navigation{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.sub-contentsLink{
+    text-align: center;
+}
+.sub-contentsLink:hover{
+    color: #adcc33;
+    border: 1px #339900 solid;
+}
+.main-navigation .main-contents:hover .sub-navigation{
+    display: block;
+}
+.HomeContents{
+    position: relative;
+    text-align: center;
+}
+.HomeImg{
+    position: absolute;
+    top: 190px;
+    left: 30%;
+}
+.BigTitle{
+    position: absolute;
+    font-size: 50px;
+    top: 320px;
+    left: 42%;
+}
+
+/* foods */
+.grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin-top: 20px;
+}
+.section{
+    text-align: center;
+}
+.food{
+    margin-top: 20%;
+    width: 400px;
+    height: 600px;
+}
+.food2{
+    margin-top: 20%;
+    padding-left: 0 50px;
+    width: 600px;
+    height: 500px;
+}
+.food3{
+    margin-top: 25%;
+    width: 400px;
+    height: 400px;
+}
+.food-description{
+    font-size: 15px;
+}
+
+/* recruitment */
+.recruitment{
+    text-align: center;
+    margin-top: 60px;
+}
+.recruitment-title{
+    margin: 20px 0 10px 0;
+    font-size: 32px;
+}
+.terms{
+    align-items: center;
+} 
+.recruitment-table{
+    margin: 0 auto;
+    border: 1px#fff solid;
+}
+.table-row{
+    border: 1px #fff solid;
+}
+.table-header{
+    font-size: 25px;
+    padding: 30px;
+}
+.recruitment-terms-sentence{
+    margin: 0 auto;
+    width: 400px;
+}
+.btn a{
+    color: rgb(95, 43, 43);
+    background-color: #fff;
+    box-shadow: 0 3px rgb(207, 207, 207);
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 6px 20px;
+    
+}
+.btn a:hover{
+    box-shadow: 0 1px rgb(207, 207, 207);
+    top: 1px;
+}
+.SupplementaryInformation{
+    position: absolute;
+    top: 110%;
+    left: 250px;
+    border:3px #fff solid;
+}
+.SplInf-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.SplInf-item{
+    padding: 10px 5px;
+}
+
+/* about */
+.about{
+    text-align: center;
+    margin-top: 150px;
+}
+/* article */
+.imgAndtext h2{
+    position: absolute;
+    top: 400px;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    border: 5px #fff double;
+    margin: 0 0 0 80px;
+}
+.about-text{
+    border: 2px #fff solid;
+    width: 838px;
+    word-wrap: break-word;
+    line-height: 35px;
+}
+/* section */
+.Director-Clerk{
+    margin: 300px 0 0;
+    font-size: 55px;
+    font-weight: 600;
+}
+/* director */
+.director{
+    margin-top: 200px;
+}
+.director-introduction{
+    font-size: 30px;
+}
+.director-p{
+    margin: 100px 0 0 430px;
+    width: 838px;
+    word-wrap: break-word;
+    font-size: 15px;
+    border: 5px #fff solid;
+}
+/* clerk */
+.clerk{
+    margin-top: 300px;
+}
+.grid{
+    display: grid;
+    gap: 130px;
+}
+.clerk-introduction{
+    font-size: 20px;
+}
+/* history */
+.history{
+    display: flex;
+    justify-content: space-around;
+    margin: 250px 0 0 0;
+    padding: 0 100px 100px;
+}
+.history-title{
+    margin: 250px 0 0;
+    font-size: 55px;
+}
+.cafeteria{
+    border-radius: 30%;
+}
+.history-table{
+    border: 5px#fff solid;
+    margin-left: 130px;
+}
+.history-row{
+    border-bottom: 1px #fff solid;
+}
+.history-header{
+    font-size: 23px;
+}
+.history-data{
+    padding: 40px;
+}
+/* Access */
+.Access{
+    margin-top: 100px;
+}
+.Access .location{
+    display: flex;
+    justify-content: space-between;
+}
+.location-info{
+    padding-top: 50px;
+    width: 20%;
+}
+.location-map{
+    width: 80%;
+}
+/* News */
+.News{
+    text-align: center;
+    margin-top: 320px;
+}
+.News-title{
+    margin-bottom: 230px;
+    padding: 15px;
+    font-size: 42px;
+    border: 7px #fff solid;
+} 
+.News-subTitle{
+    font-size: 32px;
+}
+.menus{
+    padding: 30px;
+}
+.menu{
+    line-height: 2;
+    font-size: 30px;
+}
+/* レスポンス */
+@media screen and (max-width:768px) {
+    /* header */
+    .Top-link{
+        writing-mode: vertical-rl;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .main-navigation{
+        display: flex;
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+    .main-contentsLink{
+        display: block;
+        text-align: center;
+        margin:  0 35px;
+        font-size: 20px;
+    }
+    .sub-contentsLink{
+        text-align: justify;
+        white-space: nowrap;
+    }
+    /* Home */
+    .HomeImg{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        height: 400px;
+    }
+    .BigTitle{
+        position: absolute;
+        font-size: 50px;
+        top: 270px;
+        left: 28%;
+    }
+    /* grid */
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-top: 20px;
+    }
+    /* food */
+    .food3{
+        width: 500px;
+    }
+    .food-description{
+        font-size: 25px;
+    }
+    /* about */
+    .about-text{
+        width: 481px;
+    }
+    .director-p{
+        margin: 100px 0 100px 30px;
+        width: 430px;
+    }
+    .history{
+        display: block;
+        justify-content: space-around;
+        margin: 250px 0 0 0;         
+        padding: 0 0 100px;
+    }
+    .cafeteria{
+        /* width: 400px; */
+        border-radius: 30%;
+        margin-bottom: 100px;
+    }
+    .history-table{
+        width: 390px;
+        object-fit: cover;
+        border: 5px#fff solid;
+        margin: 70px 0 0 50px;
+    }
+    .history-row{
+        border-bottom: 1px #fff solid;
+    }
+    .history-header{
+        font-size: 23px;
+    }
+    .history-data{
+        padding: 40px;
+    }
+    /* Access */
+    .Access .location{
+        display: block;
+    }
+    .location-info{
+        border: 1px #fff solid;
+        padding: 50px;
+        line-height: 3;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    .location-map{
+        width: 100%;
+    }
+    /* recruitment */
+    .SupplementaryInformation{
+        position: unset;
+        margin: 100px 0;
+        border:3px #fff solid;
+    }
+}
